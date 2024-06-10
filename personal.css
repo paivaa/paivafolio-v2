@@ -1,0 +1,272 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #3272dc;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    width: 60px;
+    height: 80px;
+    margin: 8px;
+    float: left;
+    border-radius: 30px;
+    background: white;
+}
+
+.logo img {
+    width: 40px;
+    padding: 14px 10px 12px 12px;
+}
+
+.navbar-link {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    padding: 36px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+}
+
+.nav a:hover {
+    color: #3272dc;
+    background-color: #f2f2f2;
+}
+
+.container-photo {
+    background: #3272dc;
+    display: block;
+    width: 100%;
+    margin-top: 95px;
+    height: 85vh;
+}
+
+.principal-photo {
+    display: block;
+    padding-top: 8px;
+    margin: auto;
+}
+
+.container-photo span {
+    text-align: center;
+    display: block;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.title {
+    text-align: center;
+    display: block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 1.1em;
+}
+
+.subtitle {
+    text-align: center;
+    display: block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#subtitulo:after {
+    content: '|';
+    margin-left: 3px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.section {
+    padding: 1.5rem 1.5rem;
+}
+
+.textos {
+    padding: 0px 50px;
+}
+
+.container-about-me h1 {
+    color: #363636;
+    letter-spacing: 5px;
+    margin-top: 24px;
+}
+
+.container-about-me,
+.container-servicos p {
+    text-align: justify;
+    color: #4a4a4a;
+    line-height: 1.5em;
+    font-weight: 400;
+    font-size: 1em;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.negrito {
+    font-weight: 700;
+}
+
+.container-about-me p:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.container-servicos p:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 80px 20px;
+    margin: 20px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.title-black {
+    color: #363636;
+}
+
+.tag {
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    background: #3272dc;
+    color: #f2f2f2;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin: 5px;
+}
+
+.curriculo-button {
+    padding: 20px;
+    background: #3272dc;
+    border-radius: 20px;
+    color: #f2f2f2;
+    text-decoration: none;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+}
+
+.curriculo-button:hover {
+    box-shadow: 0 12px 16px 0 #3272dc
+}
+
+.container-servicos {
+    float: left;
+    display: block;
+    width: 800px;
+}
+
+#section-servicos img {
+    padding-top: 10px;
+    width: 400px;
+    height: 300px;
+}
+
+.input-form {
+    display: inline-block;
+}
+
+.formulario {
+    display: grid;
+    margin: auto;
+    width: 500px;
+    row-gap: 8px;
+    border: 2px solid #3272dc;
+    border-radius: 20px;
+    padding: 24px 16px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+}
+
+.formulario input {
+    width: 300px;
+}
+
+.formulario label {
+    text-align: justify;
+    color: #4a4a4a;
+    line-height: 1.5em;
+    font-weight: 400;
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+.formulario input[type='submit'] {
+    border-radius: 20px;
+    border: 2px solid #3272dc;
+    background: #3272dc;
+    color: white;
+    position: relative;
+    width: 100px;
+    padding: 12px 8px;
+    text-transform: uppercase;
+    left: 400px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #3272dc;
+    width: 100%;
+    padding: 80px 12px;
+}
+
+.footer-text {
+    float: left;
+}
+
+.redes-sociais {
+    float: right;
+    position: relative;
+    top: -30px;
+    margin-right: 100px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+}
+
+.redes-sociais img {
+    padding: 8px;
+}
+
+.footer-text {
+    position: relative;
+    top: -30px;
+    color: #f2f2f2;
+    margin-left: 100px;
+}
+
+.footer-text p {
+    line-height: 1.5em;
+    font-weight: 400;
+    font-size: 1em;
+    font-family: sans-serif;
+}
