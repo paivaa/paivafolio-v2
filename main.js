@@ -1,9 +1,13 @@
-window.addEventListener('DOMContentLoaded', function (){
+document.addEventListener('DOMContentLoaded', function (){
+
+    const titulo = document.querySelector('#subtitulo');
+    typeWrite(titulo);
 
     let formulario = document.getElementsByClassName("formulario")[0]
  
     formulario.addEventListener('submit', (e) =>{
-     e.preventDefault();
+    e.preventDefault();
+    
      let obj = {nome: e.target[0].value, email: e.target[1].value, mensagem: e.target[2].value}
      console.log(obj);
      setTimeout(()=>{
@@ -29,5 +33,3 @@ function typeWrite(elemento){
   });
 }
 
-const titulo = document.querySelector('#subtitulo');
-typeWrite(titulo);
